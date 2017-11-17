@@ -346,11 +346,11 @@ request.on('response', function(response) {
 				switch(action){
 					case 'account.balance':
 					//sendTextMessage(senderID, 'get account balance');
-					checkAccount(senderID, "dog");
+					checkAccount(senderID, "fuck");
 					break;
 					case 'account.movement':
 					//sendTextMessage(senderID, 'get account movement');
-					checkAccount(senderID, "apple");
+					checkAccount(senderID, "porn");
 					break;
 					default:
 					console.log('unknown action...');
