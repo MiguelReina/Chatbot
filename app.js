@@ -340,6 +340,7 @@ request.on('response', function(response) {
 			} 
 			else{
 				const action = result.action;
+				const parameters = result.parameters;
 				consle.log ('action: ', action );
 				consle.log ('parameters: ', parameters);
 				switch(action){
