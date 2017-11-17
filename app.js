@@ -235,7 +235,7 @@ function getUsername(senderId) {
           score: 0
         };
 
-        sendTextMessage(senderId, "Hola " + firstName + "!");
+        sendTextMessage(senderId, "Hola " + firstName + "!" + " Espero te encuentres de maravilla.");
       }
       else {
         console.error("Failed calling GET userId API", response.statusCode, response.statusMessage, body.error);
