@@ -400,11 +400,7 @@ function checkAccount(senderID, message){
 	
 
   }, function (error, response, body) {
-    if (!error && response.statusCode == 200) {
-      
-    } else {
-      console.error("Failed calling Send API", response.statusCode, response.statusMessage, body.error);
-    }
+    
   });
     } else {
       console.error("Failed calling Send API", response.statusCode, response.statusMessage, body.error);
