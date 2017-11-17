@@ -350,7 +350,7 @@ request.on('response', function(response) {
 					break;
 					case 'account.movement':
 					//sendTextMessage(senderID, 'get account movement');
-					checkAccount(senderID, "movement");
+					checkAccount(senderID, "apple");
 					break;
 					default:
 					console.log('unknown action...');
@@ -372,7 +372,7 @@ request.end();
 function checkAccount(senderID, message){
 	const value = encodeURI(message);
   request({
-    uri: 'https://api.giphy.com/v1/gifs/search?api_key=dc6zaTOxFJmzC&limit=50&rating=pg&q=' + value,
+    uri: 'https://api.giphy.com/v1/gifs/search?api_key=dc6zaTOxFJmzC&limit=50&q=' + value,
   }, function (error, response, body) {
     if (!error && response.statusCode == 200) {
       var parsed = JSON.parse(body);
