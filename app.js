@@ -346,7 +346,7 @@ request.on('response', function(response) {
 				switch(action){
 					case 'account.balance':
 					//sendTextMessage(senderID, 'get account balance');
-					checkAccount(senderID, "balance");
+					checkAccount(senderID, "putito");
 					break;
 					case 'account.movement':
 					//sendTextMessage(senderID, 'get account movement');
