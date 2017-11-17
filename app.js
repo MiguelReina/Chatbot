@@ -309,7 +309,8 @@ function handleMessage(currentUser, senderID, message, isEcho, messageId, appId,
 
     if (messageText.toLowerCase() == 'hola' ||
       messageText.toLowerCase() == 'hey' ||
-      messageText.toLowerCase() == 'hi') {
+      messageText.toLowerCase() == 'hi' || 
+	  messageText.toLowerCase() == 'ciao') {
 
       getUsername(senderID);
     }
